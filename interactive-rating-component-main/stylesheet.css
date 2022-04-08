@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass';
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+  }
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card {
+    box-sizing: border-box;
+    position: relative;
+    height: 415px;
+    width: 420px; 
+    background: hsl(213, 19%, 18%);
+    border-radius: 8%;
+    padding: 8%;
+}
+
+.card-img {
+    background: hsl(220, 8%, 22%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.card-text {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    word-wrap: break-word;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.card-header {
+    font-size: 25px;
+    padding: 8% 0 3% 0;
+    font-weight: 700;
+}
+
+.btn-rating {
+    background: hsl(220, 8%, 22%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-rating:hover {
+    background: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-rating:focus {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-btn-group {
+    display: flex; 
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+
+.btn-submit {
+    background-color: hsl(25, 97%, 53%);
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    border: none;
+}
+
+#state-card {
+    display: none;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+
+.state-img {
+    height: auto;
+    margin-top: 4%;
+}
+
+.selected-rating {
+    background: hsl(220, 8%, 22%);
+    color:hsl(25, 97%, 53%);
+    border-radius: 5em;
+    padding: 2%;
+    width: 55%;
+    margin: 27px auto 2em; 
+}
+
+.selected-header {
+    font-size: 27px;
+    padding: 0% 0 3% 0;
+    font-weight: 700;
+}
+
+.selected-text{
+    font-size: 15.5px;
+}
+
+.attribution {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* 1920 x 1080 */
+
+@media (max-height: 1080px) {
+
+}
+
+@media (max-width: 550px) {
+    .card {
+        max-width: 326px;
+        max-height: 360px;
+    }
+
+    .card-img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .card-img img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .btn-rating {
+        height: 40px;
+        width: 40px;
+    }
+
+    .btn-submit {
+        height: 45px;
+    }
+
+    .card-text {
+        font-size: 13.5px;
+    }
+    
+    .card-header {
+        font-size: 20px;
+    }
+
+    .selected-rating {
+        padding: 2%;
+        width: 55%;
+        margin: 17px auto 1.5em;
+        font-size: 13.5px; 
+    }
+    
+    .selected-header {
+        font-size: 20px;
+
+    }
+    
+    .selected-text{
+        font-size: 13.5px;
+    }
+
+    .state-img img {
+        max-width: 52%;
+        height: auto;
+    }
+
+}
